@@ -36,6 +36,23 @@ function App() {
 
   useEffect(() => {
     if (!loading) {
+      const hash = window.location.hash;
+      if (hash) {
+        const targetId = hash.substring(1);
+        const el = document.getElementById(targetId);
+        if (el) {
+          setTimeout(() => {
+            const navbarOffset = 80;
+            const elementPosition = el.getBoundingClientRect().top + window.scrollY;
+            const offsetPosition = elementPosition - navbarOffset;
+            window.scrollTo({
+              top: offsetPosition,
+              behavior: 'smooth'
+            });
+          }, 100);
+          return;
+        }
+      }
       // Force scroll to top once loading screen is removed
       window.scrollTo(0, 0);
     }

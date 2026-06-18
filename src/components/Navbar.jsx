@@ -35,6 +35,29 @@ export default function Navbar() {
     return () => clearTimeout(timer);
   }, []);
 
+  const handleNavLinkClick = (e, targetId) => {
+    e.preventDefault();
+    setMobileOpen(false);
+
+    setTimeout(() => {
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        const navbarOffset = 80;
+        const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+        const offsetPosition = elementPosition - navbarOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+
+        window.history.pushState(null, '', `#${targetId}`);
+        setActiveSection(targetId);
+      }
+    }, 150);
+  };
+
+
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
@@ -83,7 +106,11 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-3 sm:px-6">
         <div className="flex items-center justify-between h-14">
           {/* Logo */}
-          <a href="#home" className="flex items-center gap-2 group">
+          <a
+            href="#home"
+            onClick={(e) => handleNavLinkClick(e, 'home')}
+            className="flex items-center gap-2 group"
+          >
             <FiShield className="text-cyber-green text-2xl group-hover:rotate-12 transition-transform" />
             <span className="font-display text-cyber-green text-sm sm:text-base tracking-wider font-semibold">
               {firstName.toUpperCase()}<span className="text-white">.{lastName ? lastName.substring(0, 1).toUpperCase() : ''}</span>
@@ -93,11 +120,13 @@ export default function Navbar() {
           {/* Desktop Nav */}
           <div className="hidden lg:flex items-center gap-3 xl:gap-5 2xl:gap-6">
             {navLinks.map((link) => {
-              const isActive = activeSection === link.href.substring(1);
+              const sectionId = link.href.substring(1);
+              const isActive = activeSection === sectionId;
               return (
                 <a
                   key={link.name}
                   href={link.href}
+                  onClick={(e) => handleNavLinkClick(e, sectionId)}
                   className={`nav-link flex items-center gap-1.5 transition-colors duration-300 py-1 ${
                     isActive ? 'text-cyber-green font-semibold' : 'text-cyber-text/80'
                   }`}
@@ -153,12 +182,13 @@ export default function Navbar() {
           >
             <div className="px-6 pb-6 pt-3 flex flex-col gap-3">
               {navLinks.map((link) => {
-                const isActive = activeSection === link.href.substring(1);
+                const sectionId = link.href.substring(1);
+                const isActive = activeSection === sectionId;
                 return (
                   <a
                     key={link.name}
                     href={link.href}
-                    onClick={() => setMobileOpen(false)}
+                    onClick={(e) => handleNavLinkClick(e, sectionId)}
                     className={`nav-link py-1.5 flex items-center gap-2 ${
                       isActive ? 'text-cyber-green font-semibold' : 'text-cyber-text/85'
                     }`}
