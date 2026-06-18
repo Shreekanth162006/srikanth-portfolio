@@ -5,7 +5,7 @@ const defaultData = {
     name: 'Srikanth N',
     firstName: 'SRIKANTH',
     lastName: 'N',
-    photo: 'https://api.dicebear.com/7.x/bottts/svg?seed=SrikanthN',
+    photo: '/secure_docs/Srikanth N croped.jpg',
     email: 'Shreekanth162006@gmail.com',
     contactEmail: 'Shreekanth162006@gmail.com',
     github: 'https://github.com/srikanthn16',
@@ -146,8 +146,8 @@ const defaultData = {
     },
   ],
   certifications: [
-    { id: 'c1', title: 'Cryptography and Network Security', issuer: 'NPTEL — IIT', icon: '/secure_docs/icons/nptel.jpg', color: '#00ff41', file: '/secure_docs/NPTEL_Crypto.pdf' },
-    { id: 'c2', title: 'Foundation of Cloud IoT Edge ML', issuer: 'NPTEL — IIT', icon: '/secure_docs/icons/nptel.jpg', color: '#00e5ff', file: '/secure_docs/NPTEL_IoT_Edge.pdf' },
+    { id: 'c1', title: 'Cryptography and Network Security', issuer: 'NPTEL — IIT', icon: '/secure_docs/icons/nptel.jpg', color: '#00ff41', file: '/secure_docs/cryptography nptel.pdf' },
+    { id: 'c2', title: 'Foundation of Cloud IoT Edge ML', issuer: 'NPTEL — IIT', icon: '/secure_docs/icons/nptel.jpg', color: '#00e5ff', file: '/secure_docs/Foundation of Cloud IoT Edge ML.pdf' },
     { id: 'c3', title: 'Cyber Security and Privacy', issuer: 'NPTEL — IIT', icon: '/secure_docs/icons/nptel.jpg', color: '#8b5cf6', file: '/secure_docs/NPTEL_CyberPrivacy.pdf' },
   ],
   achievements: [
@@ -166,7 +166,7 @@ const defaultData = {
       desc: 'Developed breach detection alert backends, performance analytics dashboards, and built a custom SLA escalation module with React for tracking ticket urgency status.',
       icon: '/secure_docs/icons/adroit_technologies_innovative_solutions_pvt_ltd_logo.jpg',
       color: 'var(--cyber-primary)',
-      certUrl: '/secure_docs/AdroIT_IBM_Certificate.pdf'
+      certUrl: '/secure_docs/AdroIT Technologies internship.pdf'
     },
     {
       id: 'e2',
@@ -177,7 +177,7 @@ const defaultData = {
       desc: 'Co-developed a Fund Trail Analysis Tool to automate financial transaction flow tracking and fraud detection, integrating KYC mapping, duplicate checks, and state summaries.',
       icon: '/secure_docs/icons/cyber crime wing.jpg',
       color: '#00e5ff',
-      certUrl: '/secure_docs/CyberCrimeWing_Certificate.pdf'
+      certUrl: '/secure_docs/srikanth cyber crime wing certificate.jpg'
     },
     {
       id: 'e3',
@@ -188,7 +188,7 @@ const defaultData = {
       desc: 'Trained in enterprise network security protocols, ethical hacking workflows, threat modeling, and vulnerability assessment (VAPT) methodologies.',
       icon: '/secure_docs/icons/Edu tantr.jpg',
       color: '#8b5cf6',
-      certUrl: '/secure_docs/VDT_EduTantr_Certificate.pdf'
+      certUrl: '/secure_docs/edu tantar intern.jpg'
     },
     {
       id: 'e4',
@@ -199,7 +199,7 @@ const defaultData = {
       desc: 'Investigated digital crime incidents, analyzed forensic evidence, monitored network threats, and documented formal technical findings in case reports.',
       icon: '/secure_docs/icons/cyber crime pondy.png',
       color: '#ff073a',
-      certUrl: '/secure_docs/CyberCrimePolice_Certificate.pdf'
+      certUrl: '/secure_docs/Gallery/WhatsApp Image 2026-06-17 at 9.5555.jpeg'
     }
   ],
   educationList: [
