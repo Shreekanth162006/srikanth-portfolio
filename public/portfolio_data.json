@@ -298,7 +298,7 @@
       "issuer": "NPTEL — IIT",
       "icon": "/secure_docs/icons/nptel.jpg",
       "color": "#8b5cf6",
-      "file": "/secure_docs/NPTEL_CyberPrivacy.pdf"
+      "file": "\\secure_docs\\WhatsApp Image 2025-12-02 at 21.18.19_fcb32835.jpg"
     }
   ],
   "achievements": [
@@ -375,7 +375,7 @@
       "desc": "Investigated digital crime incidents, analyzed forensic evidence, monitored network threats, and documented formal technical findings in case reports.",
       "icon": "/secure_docs/icons/cyber crime pondy.png",
       "color": "#ff073a",
-      "certUrl": "/secure_docs/Gallery/WhatsApp Image 2026-06-17 at 9.5555.jpeg"
+      "certUrl": "\\secure_docs\\Srikanth N croped.jpg"
     }
   ],
   "educationList": [
@@ -384,7 +384,7 @@
       "year": "2023 - Present",
       "title": "B.E. Computer Science (Cyber Security) - Honours",
       "school": "Dhanalakshmi Srinivasan College of Engineering & Technology",
-      "desc": "Pursuing Honours degree specializing in networks, OS hardening, cryptography, digital forensics, and secure coding. Maintaining a CGPA of 7.71 / 10.",
+      "desc": "Pursuing Honours degree specializing in networks, OS hardening, cryptography, digital forensics, and secure coding. Maintaining a CGPA of 7.78/10.",
       "icon": "/secure_docs/icons/dhanalakshmi srinivasan.png",
       "color": "var(--cyber-primary)"
     },
@@ -406,20 +406,21 @@
     {
       "id": "h1",
       "title": "IBM Naan Mudhalvan EBPL Hackathon",
-      "role": "Team Lead / Security Dev",
-      "year": "2026",
-      "desc": "Designed and built the SLA Ticketing system with end-to-end audit logs. Bypassed custom WAF rule configurations in mock security drills.",
+      "role": "Team Lead",
+      "year": "2025",
+      "desc": "The Connected Home Security System is an innovative IoT-based solution designed to provide\nhomeowners with smart, real-time protection. The system integrates motion sensors, cameras,\nand microcontrollers to detect unusual activity, send alerts, and allow remote monitoring through\na mobile app. By using modern IoT technology, cloud connectivity, and AI-based surveillance,\nthis project aims to make home security smart, affordable, and accessible for everyone. Users\ncan view live footage, receive instant notifications, and control devices remotely, ensuring\nround-the-clock safety",
       "color": "#00ff41",
       "icon": "/secure_docs/icons/naan mudhalan11.png"
     },
     {
       "id": "h2",
-      "title": "State Level Cyber Hackathon",
-      "role": "Security Analyst",
-      "year": "2025",
-      "desc": "Participated in a 24-hour hackathon focused on forensic analysis and transaction flow mapping.",
+      "title": " Cognizant Technoverse Hackathon 2026",
+      "role": "Team Member",
+      "year": "2026",
+      "desc": "This experience gave me the opportunity to work on innovative problem-solving approaches, AI-driven workflow concepts, and real-world technical challenges in a competitive environment.\nDuring the hackathon, I explored: 💡 Generative AI concepts\n⚙️ Workflow and system design\n🧠 Logical thinking & structured problem-solving\n🤝 Team collaboration and innovation\n⏱️ Time-bound technical challenges",
       "color": "#00e5ff",
-      "icon": "/secure_docs/icons/cognizant.avif"
+      "icon": "/secure_docs/icons/cognizant.avif",
+      "certUrl": "\\secure_docs\\cts hackthon.pdf"
     }
   ],
   "leadership": [
@@ -428,7 +429,7 @@
       "title": "Secretary — Department Club",
       "organization": "DSCET",
       "year": "2024 – 2025",
-      "desc": "Organizing technical symposiums, hands-on VAPT workshops, and coordinating student cyber defense labs.",
+      "desc": "Organizing technical symposiums, hands-on workshops, and coordinating student cyber defense labs.Coducting events",
       "color": "#8b5cf6",
       "icon": "/secure_docs/icons/cyber security department.png"
     },
@@ -504,97 +505,97 @@
   "bootcamps": [
     {
       "id": "bc1",
-      "title": "Cybersecurity Bootcamp",
-      "organizer": "Google / Coursera",
+      "title": "Five-Day Hands-On Workshop on Internet of Things(IoT)",
+      "organizer": "MIT Campus,Anna University,Chennai,in association with(C-DAC)",
       "year": "2025",
-      "desc": "Intensive hands-on training covering network security, threat detection, and incident response operations.",
+      "desc": "This bootcamp gave me valuable practical exposure to IoT device programming, along with:\nInsights into real-world IoT applications\nHands-on learning experience\nGuidance from industry experts and academic leader",
       "color": "#00ff41",
-      "icon": "💻",
-      "certUrl": "/secure_docs/google coursera.pdf"
+      "icon": "data:image/webp;base64,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",
+      "certUrl": "\\secure_docs\\iot bootcamp.pdf"
     },
     {
       "id": "bc2",
-      "title": "Ethical Hacking Workshop",
-      "organizer": "DSCET Cyber Club",
-      "year": "2024",
-      "desc": "Participated in a practical seminar on vulnerability scanning, threat modeling, and OWASP top 10 exploitation techniques.",
+      "title": "UI/UX Design Workshop",
+      "organizer": "VKR Solutions,Pondicherry",
+      "year": "2025",
+      "desc": "During this workshop, I gained valuable insights into:\n - What UI (User Interface) and UX (User Experience) really mean\n - The tools and software commonly used in the industry\n - Real-time applications and practical knowledge",
       "color": "#00e5ff",
-      "icon": "🛡️",
-      "certUrl": "/secure_docs/iot bootcamp.pdf"
+      "icon": "data:image/jpeg;base64,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",
+      "certUrl": "\\secure_docs\\WhatsApp Image 2025-07-28 at 17.20.21_2f560bf7.jpg"
     }
   ],
   "gallery": [
     {
       "id": "g6",
-      "title": "Symposium Certificate of Merit",
-      "description": "Awarded for active presentation and technical showcase during the campus cybersecurity symposium.",
+      "title": "Anna University Examination Achievement",
+      "description": "Outstanding performance recognition in the Anna University semester examinations.secured 2nd place in department of cyber security.",
       "imageUrl": "/secure_docs/Gallery/WhatsApp Image 2026-06-17 at 8.59.19 PM.jpeg",
-      "category": "Events",
-      "date": "2026"
+      "category": "Academic",
+      "date": "2023-2024"
     },
     {
       "id": "g7",
-      "title": "Technical Hands-On Workshop Certificate",
-      "description": "Completed VAPT training and simulated defensive cybersecurity laboratory drills.",
+      "title": "Secretary — Department Club, DSCET",
+      "description": "Led and coordinated departmental club activities, events, and student engagement initiatives.\nManaged event planning, team coordination, and communication between students and faculty.\nContributed to organizing technical workshops, seminars, and awareness programs.",
       "imageUrl": "/secure_docs/Gallery/WhatsApp Image 2026-06-17 at 9.00.08 PM.jpeg",
-      "category": "Certificates",
-      "date": "2026"
+      "category": "Leadership",
+      "date": "2024-2025"
     },
     {
       "id": "g8",
-      "title": "Anna University Examination Achievement",
-      "description": "Outstanding performance recognition in the Anna University semester examinations.",
+      "title": "Club Openning",
+      "description": "",
       "imageUrl": "/secure_docs/Gallery/WhatsApp Image 2026-06-17 at 9.04.21 PM.jpeg",
-      "category": "Academic",
-      "date": "2026"
+      "category": "",
+      "date": ""
     },
     {
       "id": "g9",
-      "title": "AdroIT Technologies Full Stack Certificate",
-      "description": "Internship certification for breach detection alert backend projects and SLA analytics dashboard.",
+      "title": "Joint Secretary — Department Club, DSCET",
+      "description": "Assisted in planning and executing departmental events and club operations.\nCollaborated with student teams to organize technical and extracurricular activities.\nSupported communication, documentation, and event management tasks.",
       "imageUrl": "/secure_docs/Gallery/WhatsApp Image 2026-06-17 at 9.04.22 PM.jpeg",
-      "category": "Internships",
-      "date": "2026"
+      "category": "Leadership",
+      "date": "2023-2024"
     },
     {
       "id": "g10",
-      "title": "IIT NPTEL Cryptography Honors",
-      "description": "Scored high honors in Advanced Cryptography and Network Security course from IIT.",
+      "title": "Student Council Member — DSCET",
+      "description": "Represented student interests and participated in institutional decision-making discussions.\nAssisted in organizing college events, student welfare activities, and campus initiatives.\nWorked with faculty and student representatives to enhance student engagement and development.",
       "imageUrl": "/secure_docs/Gallery/WhatsApp Image 2026-06-17 at 9.07.23 PM.jpeg",
-      "category": "Certificates",
-      "date": "2026"
+      "category": "Leadership & Student Activities",
+      "date": "2023-2024"
     },
     {
       "id": "g11",
-      "title": "Google Coursera Bootcamp Completion",
-      "description": "Successfully finished intensive learning bootcamp on security operations VAPT workflows.",
+      "title": "Student Training",
+      "description": "Mentored junior students through evening training sessions, organized technical events, and contributed to student development initiatives as part of the Department Club",
       "imageUrl": "/secure_docs/Gallery/WhatsApp Image 2026-06-17 at 9.20.42 PM.jpeg",
-      "category": "Certificates",
+      "category": "Training sessions",
       "date": "2026"
     },
     {
       "id": "g12",
-      "title": "State Cybersecurity Hackathon Lead Award",
-      "description": "Recognized as team lead for securing systems and building robust authentication shields in mock drills.",
+      "title": "DCG91422 - DCG Coimbatore Cybersecurity Conference 2026",
+      "description": "The event brought together 2000+ cybersecurity professionals, including CISOs, industry leaders, and experts, making it an incredible platform for learning, networking, and real-world insights.",
       "imageUrl": "/secure_docs/Gallery/WhatsApp Image 2026-06-17 at 9.22.22 PM.jpeg",
-      "category": "Leadership",
+      "category": "Event",
       "date": "2026"
     },
     {
       "id": "g13",
-      "title": "Department Club Leadership Certificate",
-      "description": "Secretaryship certification of Dhanalakshmi Srinivasan department club activities.",
+      "title": "BRAINSTORMX’26, a 32-hour hackathon Technical Event",
+      "description": "organized BRAINSTORMX’26, a flagship technical event conducted on March 03–04 by the DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING -CYBER SECURITY at Dhanalakshmi Srinivasan College of Eng and Tech. An Autonomous Institution\nAs the Department Secretary, I had the opportunity to plan, coordinate, and execute this event, ensuring a smooth and impactful experience for all participants",
       "imageUrl": "/secure_docs/Gallery/WhatsApp Image 2026-06-17 at 9.34.42 PM.jpeg",
-      "category": "Leadership",
+      "category": "Event",
       "date": "2026"
     },
     {
       "id": "g14",
-      "title": "Cyber Crime Police Pondicherry Internship",
-      "description": "Completed internship on digital forensics investigation and chain of custody documentation.",
+      "title": "",
+      "description": "",
       "imageUrl": "/secure_docs/Gallery/WhatsApp Image 2026-06-17 at 9.5555.jpeg",
-      "category": "Internships",
-      "date": "2026"
+      "category": "",
+      "date": ""
     }
   ]
 }
