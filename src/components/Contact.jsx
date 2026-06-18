@@ -43,7 +43,7 @@ export default function Contact() {
                     name="name"
                     required
                     placeholder="Your full name"
-                    className="w-full px-4 py-3 bg-cyber-darker border border-cyber-green/20 rounded-lg text-gray-200 font-mono text-sm outline-none focus:border-cyber-green focus:shadow-[0_0_15px_rgba(0,255,65,0.15)] transition-all placeholder:text-gray-600"
+                    className="w-full px-4 py-3 bg-cyber-darker border border-cyber-green/20 rounded-lg text-gray-200 font-mono text-[16px] sm:text-sm outline-none focus:border-cyber-green focus:shadow-[0_0_15px_rgba(0,255,65,0.15)] transition-all placeholder:text-gray-600"
                   />
                 </div>
                 <div>
@@ -53,7 +53,7 @@ export default function Contact() {
                     name="email"
                     required
                     placeholder="your@email.com"
-                    className="w-full px-4 py-3 bg-cyber-darker border border-cyber-green/20 rounded-lg text-gray-200 font-mono text-sm outline-none focus:border-cyber-green focus:shadow-[0_0_15px_rgba(0,255,65,0.15)] transition-all placeholder:text-gray-600"
+                    className="w-full px-4 py-3 bg-cyber-darker border border-cyber-green/20 rounded-lg text-gray-200 font-mono text-[16px] sm:text-sm outline-none focus:border-cyber-green focus:shadow-[0_0_15px_rgba(0,255,65,0.15)] transition-all placeholder:text-gray-600"
                   />
                 </div>
                 <div>
@@ -63,7 +63,7 @@ export default function Contact() {
                     required
                     rows="4"
                     placeholder="Type your message here..."
-                    className="w-full px-4 py-3 bg-cyber-darker border border-cyber-green/20 rounded-lg text-gray-200 font-mono text-sm outline-none focus:border-cyber-green focus:shadow-[0_0_15px_rgba(0,255,65,0.15)] transition-all resize-none placeholder:text-gray-600"
+                    className="w-full px-4 py-3 bg-cyber-darker border border-cyber-green/20 rounded-lg text-gray-200 font-mono text-[16px] sm:text-sm outline-none focus:border-cyber-green focus:shadow-[0_0_15px_rgba(0,255,65,0.15)] transition-all resize-none placeholder:text-gray-600"
                   />
                 </div>
                 <div>

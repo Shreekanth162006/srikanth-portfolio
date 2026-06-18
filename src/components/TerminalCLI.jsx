@@ -200,7 +200,7 @@ export default function TerminalCLI() {
               value={input}
               onChange={e => setInput(e.target.value)}
               onKeyDown={handleCommand}
-              className="flex-1 bg-transparent text-white font-mono text-xs outline-none border-none caret-cyber-green"
+              className="flex-1 bg-transparent text-white font-mono text-[16px] sm:text-xs outline-none border-none caret-cyber-green"
               autoComplete="off"
               autoCorrect="off"
               autoCapitalize="off"
