@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { FiLock, FiX, FiSettings, FiSave, FiLogOut, FiPlus, FiTrash2, FiUser, FiCode, FiFolder, FiAward, FiRefreshCw } from 'react-icons/fi';
+import { FiLock, FiX, FiSettings, FiSave, FiLogOut, FiPlus, FiTrash2, FiUser, FiCode, FiFolder, FiAward, FiRefreshCw, FiDownload, FiCopy } from 'react-icons/fi';
 import { usePortfolio } from '../PortfolioContext';
 
 const TABS = ['Profile', 'Timeline', 'Skills', 'Projects', 'Certs', 'Achievements', 'Gallery', 'Blogs', 'Activities', 'Bootcamps', 'Settings'];
@@ -94,7 +94,7 @@ function IconEditor({ icon, onChange, color, onColorChange, label = "Icon & Colo
 
 export default function AdminPanel() {
   const ctx = usePortfolio();
-  const { data, isAdmin, login, logout, resetToDefault, adminPanelOpen: open, setAdminPanelOpen: setOpen, adminPanelTab: tab, setAdminPanelTab: setTab, updateProfile, updateEducation, updateRoles, updateSkillCategory, addSkillCategory, removeSkillCategory, addProject, updateProject, removeProject, addCertification, updateCertification, removeCertification, updateAchievements, updateAdmin, theme, setTheme, addBlog, updateBlog, removeBlog, addHackathon, updateHackathon, removeHackathon, addLeadership, updateLeadership, removeLeadership, addAchievementText, updateAchievementText, removeAchievementText, addExperience, updateExperience, removeExperience, addEducationItem, updateEducationItem, removeEducationItem, addBootcamp, updateBootcamp, removeBootcamp, addGalleryItem, updateGalleryItem, removeGalleryItem } = ctx;
+  const { data, isAdmin, login, logout, resetToDefault, adminPanelOpen: open, setAdminPanelOpen: setOpen, adminPanelTab: tab, setAdminPanelTab: setTab, updateProfile, updateEducation, updateRoles, updateSkillCategory, addSkillCategory, removeSkillCategory, addProject, updateProject, removeProject, addCertification, updateCertification, removeCertification, updateAchievements, updateAdmin, theme, setTheme, addBlog, updateBlog, removeBlog, addHackathon, updateHackathon, removeHackathon, addLeadership, updateLeadership, removeLeadership, addAchievementText, updateAchievementText, removeAchievementText, addExperience, updateExperience, removeExperience, addEducationItem, updateEducationItem, removeEducationItem, addBootcamp, updateBootcamp, removeBootcamp, addGalleryItem, updateGalleryItem, removeGalleryItem, importData } = ctx;
   const [user, setUser] = useState('');
   const [pass, setPass] = useState('');
   const [err, setErr] = useState('');
@@ -937,10 +937,89 @@ export default function AdminPanel() {
         ))}
       </div>
 
+      <h4 className="text-cyber-green text-xs font-mono mb-3 mt-6">PORTFOLIO DATA ACTIONS</h4>
+      <p className="text-[10px] text-gray-400 font-mono mb-3 leading-relaxed">
+        Export your changes as a configuration file to save or copy them to your clipboard. You can restore your data by uploading a saved file.
+      </p>
+      <div className="space-y-2 mb-6">
+        <button 
+          onClick={() => {
+            const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(data, null, 2));
+            const downloadAnchor = document.createElement('a');
+            downloadAnchor.setAttribute("href", dataStr);
+            downloadAnchor.setAttribute("download", "portfolio_data.json");
+            document.body.appendChild(downloadAnchor);
+            downloadAnchor.click();
+            downloadAnchor.remove();
+            flash('Downloaded portfolio_data.json!');
+          }} 
+          className="cyber-btn w-full flex items-center justify-center gap-2 text-xs border-cyber-green/40 text-cyber-green hover:bg-cyber-green/10"
+        >
+          <FiDownload /> Download Data Config (JSON)
+        </button>
+
+        <button 
+          onClick={() => {
+            navigator.clipboard.writeText(JSON.stringify(data, null, 2))
+              .then(() => {
+                flash('Copied configuration to clipboard!');
+              })
+              .catch(err => {
+                alert('Could not copy configuration: ' + err);
+              });
+          }} 
+          className="cyber-btn w-full flex items-center justify-center gap-2 text-xs border-cyber-green/40 text-cyber-green hover:bg-cyber-green/10"
+        >
+          <FiCopy /> Copy Config JSON to Clipboard
+        </button>
+
+        <div className="p-3 border border-cyber-green/10 rounded-lg bg-cyber-darker/30">
+          <label className="text-cyber-green/60 text-[10px] font-mono mb-1 block uppercase">Import Data Config</label>
+          <input
+            type="file"
+            accept=".json"
+            onChange={(e) => {
+              const file = e.target.files[0];
+              if (file) {
+                const reader = new FileReader();
+                reader.onload = (ev) => {
+                  try {
+                    const parsed = JSON.parse(ev.target.result);
+                    if (parsed && parsed.profile && parsed.education && parsed.skills) {
+                      importData(parsed);
+                      flash('Data config imported!');
+                    } else {
+                      alert('Invalid backup file! Missing required profile, education or skills fields.');
+                    }
+                  } catch (err) {
+                    alert('Error parsing JSON backup file: ' + err.message);
+                  }
+                };
+                reader.readAsText(file);
+              }
+            }}
+            className="text-[9px] text-gray-400 file:mr-2 file:py-1 file:px-2 file:rounded file:border file:border-cyber-green/20 file:text-[9px] file:font-mono file:bg-cyber-darker file:text-cyber-green hover:file:bg-cyber-green/10 cursor-pointer w-full"
+          />
+        </div>
+      </div>
+
       <div className="mt-6 pt-4 border-t border-cyber-red/20">
         <h4 className="text-cyber-red text-xs font-mono mb-3">DANGER ZONE</h4>
-        <button onClick={() => { if (confirm('Reset all data to defaults? This cannot be undone.')) { resetToDefault(); flash('Reset done!'); } }}
-          className="cyber-btn w-full flex items-center justify-center gap-2 text-xs border-cyber-red/40 text-cyber-red hover:bg-cyber-red/10"><FiRefreshCw /> Reset to Default Data</button>
+        <div className="space-y-2">
+          <button 
+            onClick={() => {
+              if (confirm('Clear local cache? This will restore data to the server configuration file.')) {
+                localStorage.removeItem('portfolio_full_data');
+                window.location.reload();
+              }
+            }}
+            className="cyber-btn w-full flex items-center justify-center gap-2 text-xs border-cyber-red/40 text-cyber-red hover:bg-cyber-red/10"
+          >
+            Clear Local Cache (Reload)
+          </button>
+          <button onClick={() => { if (confirm('Reset all data to defaults? This cannot be undone.')) { resetToDefault(); flash('Reset done!'); } }}
+            className="cyber-btn w-full flex items-center justify-center gap-2 text-xs border-cyber-red/40 text-cyber-red hover:bg-cyber-red/10"><FiRefreshCw /> Reset to Default Data</button>
+        </div>
       </div>
     </div>
   );

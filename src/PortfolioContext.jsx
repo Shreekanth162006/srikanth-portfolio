@@ -428,6 +428,32 @@ export function PortfolioProvider({ children }) {
   const [adminPanelTab, setAdminPanelTab] = useState('Profile');
 
   useEffect(() => {
+    // If no localStorage data, fetch from the server config file
+    try {
+      const saved = localStorage.getItem('portfolio_full_data');
+      if (saved) return; // Prioritize local edits
+    } catch (e) {}
+
+    fetch('/portfolio_data.json')
+      .then(res => {
+        if (res.ok) return res.json();
+        throw new Error('Not found');
+      })
+      .then(serverData => {
+        if (serverData) {
+          setData(serverData);
+        }
+      })
+      .catch(err => {
+        // Fallback silently to defaultData
+      });
+  }, []);
+
+  const importData = (imported) => {
+    setData(imported);
+  };
+
+  useEffect(() => {
     try {
       localStorage.setItem('portfolio_full_data', JSON.stringify(data));
     } catch (e) {
@@ -728,6 +754,7 @@ export function PortfolioProvider({ children }) {
       addEducationItem, updateEducationItem, removeEducationItem,
       addBootcamp, updateBootcamp, removeBootcamp,
       addGalleryItem, updateGalleryItem, removeGalleryItem,
+      importData,
     }}>
       {children}
     </PortfolioContext.Provider>
