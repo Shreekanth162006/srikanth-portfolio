@@ -13,7 +13,7 @@ export default function Contact() {
   const targetEmail = profile.contactEmail || profile.email;
 
   return (
-    <section id="contact" className="py-20 lg:py-28 relative" ref={ref}>
+    <section id="contact" className="py-20 lg:py-28 relative overflow-hidden" ref={ref}>
       <div className="absolute inset-0 cyber-grid-bg opacity-30" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div initial={{ opacity: 0, y: 30 }} animate={inView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6 }} className="mb-16">
@@ -86,7 +86,7 @@ export default function Contact() {
             <div className="cyber-card p-6">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 flex items-center justify-center bg-cyber-green/10 rounded-xl border border-cyber-green/20"><FiMail className="text-cyber-green text-xl" /></div>
-                <div><h4 className="text-white font-semibold text-sm">Email</h4><p className="text-cyber-green/60 text-sm font-mono">{targetEmail}</p></div>
+                <div><h4 className="text-white font-semibold text-sm">Email</h4><p className="text-cyber-green/60 text-xs sm:text-sm font-mono break-all">{targetEmail}</p></div>
               </div>
             </div>
             <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" className="cyber-card p-6 flex items-center gap-4 block">

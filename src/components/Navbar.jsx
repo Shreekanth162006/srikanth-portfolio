@@ -80,7 +80,7 @@ export default function Navbar() {
       transition={hasLoaded ? { duration: 0.3, ease: 'easeInOut' } : { duration: 0.8, delay: 4 }}
       className="fixed top-4 left-1/2 z-[1000] w-[95%] xl:w-[92%] max-w-7xl bg-cyber-darker/50 backdrop-blur-[30px] border border-white/12 shadow-lg shadow-cyber-green/5 overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6">
         <div className="flex items-center justify-between h-14">
           {/* Logo */}
           <a href="#home" className="flex items-center gap-2 group">

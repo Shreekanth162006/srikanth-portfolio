@@ -62,7 +62,7 @@ export default function Achievements() {
   }, [selectedImage, data.gallery]);
 
   return (
-    <section id="gallery" className="py-20 relative" ref={ref}>
+    <section id="gallery" className="py-20 relative overflow-hidden" ref={ref}>
       <div className="absolute inset-0 cyber-grid-bg opacity-30 pointer-events-none" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         

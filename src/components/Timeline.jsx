@@ -30,7 +30,7 @@ export default function Timeline() {
       <h4 className="text-cyber-green font-display text-xs tracking-wider uppercase mb-6 flex items-center gap-2">
         <span className="text-cyber-green/50">▶</span> {title}
       </h4>
-      <div className="relative border-l border-cyber-green/20 ml-2 pl-8 space-y-6">
+      <div className="relative border-l border-cyber-green/20 ml-6 pl-8 space-y-6">
         {/* Glow Line indicator */}
         <div className="absolute top-0 bottom-0 left-0 w-[1px] bg-gradient-to-b from-cyber-green to-transparent opacity-40 pointer-events-none" />
         
@@ -44,7 +44,7 @@ export default function Timeline() {
           >
             {/* Timeline Circle with Icon */}
             <span
-              className="absolute -left-[52px] top-1 w-10 h-10 rounded-full border border-cyber-darker flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:shadow-[0_0_8px_var(--primary)] text-lg z-10 bg-cyber-darker overflow-hidden"
+              className="absolute -left-[48px] sm:-left-[52px] top-1 w-8 h-8 sm:w-10 sm:h-10 rounded-full border border-cyber-darker flex items-center justify-center transition-all duration-300 group-hover:scale-110 group-hover:shadow-[0_0_8px_var(--primary)] text-sm sm:text-lg z-10 bg-cyber-darker overflow-hidden"
               style={{
                 borderColor: m.color || 'var(--cyber-primary)',
                 color: m.color || 'var(--cyber-primary)',

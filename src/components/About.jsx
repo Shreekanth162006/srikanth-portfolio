@@ -16,7 +16,7 @@ export default function About() {
   const firstName = nameParts.slice(0, -1).join(' ') || '';
 
   return (
-    <section id="about" className="py-20 lg:py-28 relative" ref={ref}>
+    <section id="about" className="py-20 lg:py-28 relative overflow-hidden" ref={ref}>
       <div className="absolute inset-0 cyber-grid-bg opacity-50" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <motion.div
@@ -50,7 +50,11 @@ export default function About() {
                 <div className="terminal-dot bg-red-500" />
                 <div className="terminal-dot bg-yellow-500" />
                 <div className="terminal-dot bg-green-500" />
-                <span className="text-cyber-green/50 text-xs font-mono ml-2">{terminalUser}@kali:~/about</span>
+                <span className="text-cyber-green/50 text-xs font-mono ml-2">
+                  <span className="inline sm:hidden">sri</span>
+                  <span className="hidden sm:inline">{terminalUser}</span>
+                  @kali:~/about
+                </span>
               </div>
               <div className="terminal-body">
                 <p className="mb-4">

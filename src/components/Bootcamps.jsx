@@ -11,7 +11,7 @@ export default function Bootcamps() {
   if (bootcamps.length === 0) return null;
 
   return (
-    <section id="bootcamps" className="py-20 lg:py-28 relative font-sans" ref={ref}>
+    <section id="bootcamps" className="py-20 lg:py-28 relative font-sans overflow-hidden" ref={ref}>
       <div className="absolute inset-0 cyber-grid-bg opacity-30 pointer-events-none" />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
