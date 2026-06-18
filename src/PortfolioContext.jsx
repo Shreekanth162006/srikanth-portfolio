@@ -5,21 +5,21 @@ const defaultData = {
     name: 'Srikanth N',
     firstName: 'SRIKANTH',
     lastName: 'N',
-    photo: '/secure_docs/Srikanth N croped.jpg',
+    photo: '/secure_docs/Srikanth pic.jpeg',
     email: 'Shreekanth162006@gmail.com',
     contactEmail: 'Shreekanth162006@gmail.com',
-    github: 'https://github.com/srikanthn16',
-    githubUsername: 'srikanthn16',
+    github: 'https://github.com/Shreekanth162006',
+    githubUsername: 'Shreekanth162006',
     linkedin: 'https://linkedin.com/in/srikanthn16',
     linkedinUsername: 'srikanthn16',
     location: 'Chennai, India',
-    bio: 'Pre-Final Year B.E. Computer Science & Engineering (Cyber Security) Honours student with a passion for VAPT, digital forensics, and ethical hacking.',
-    aboutBio: 'Pre-Final Year B.E. Computer Science & Engineering (Cyber Security) student pursuing an (Honours degree), with a strong foundation in network security, digital forensics, ethical hacking, and security operations. Experienced in forensic investigations, fund trail analysis, and secure app development.',
+    bio: 'Aspiring SOC Analyst | Cybersecurity Engineering Student | SIEM | Ethical Hacking | VAPT| Incident Response Threat Detection | Cloud Security',
+    aboutBio: 'Pre-Final Year B.E. Computer Science & Engineering (Cyber Security) student pursuing an (Honours degree), with a strong\nfoundation in network security, digital forensics, ethical hacking, and security operations. Completed four internships across\ncybercrime agencies and technology organizations, gaining hands-on experience in forensic investigations, fund trail analysis,\ncybercrime case support, and secure application development. Skilled in SIEM monitoring, threat detection, log analysis,\nincident response, vulnerability assessment, and security analysis. Passionate about cybersecurity, cloud security, and AIdriven security automation, with a keen interest in SOC operations, threat hunting, and cyber defence. Seeking opportunities to\napply technical and analytical skills in real-world security environments.',
     resumeUrl: '/secure_docs/Srikanth N_Resume.pdf',
     resumeFormat: 'PDF',
     resumeStatus: 'Latest Version',
     resumeUpdated: '2026',
-    focus: 'VAPT & Ethical Hacking',
+    focus: 'CyberSecurity Engineer',
     status: '● Active',
     timezone: 'IST (UTC+5:30)',
     interests: [
@@ -27,20 +27,22 @@ const defaultData = {
       'Web Application Security',
       'Network Security & Forensics',
       'Linux Administration & Hardening',
-      'Secure Software Development'
+      'Secure Software Development',
+      'SOC ',
+      'Cloud Security'
     ],
   },
   education: {
-    degree: 'B.E Computer Science & Engineering (Cyber Security) - Honours',
-    college: 'Dhanalakshmi Srinivasan College of Engineering and Technology',
-    university: 'Anna University',
-    cgpa: '7.71',
+    degree: 'B.E Computer Science & Engineering (Cyber Security) - Honours Pursuing',
+    college: 'Dhanalakshmi Srinivasan College of Engineering and Technology An Autonomus',
+    university: 'Affilated To Anna University',
+    cgpa: '7.78',
   },
   roles: [
     'Cybersecurity Engineer',
     'Ethical Hacker',
-    'SOC Analyst (Learning)',
-    'Digital Forensics Intern',
+    'SOC Analyst',
+    'Digital Forensics',
   ],
   skills: [
     {
@@ -104,6 +106,7 @@ const defaultData = {
         { name: 'Tailwind CSS', level: 85 },
         { name: 'VAPT Workflows', level: 82 },
         { name: 'OWASP Top 10', level: 85 },
+        { name: 'Vs code', level: 70 },
       ],
     },
   ],
@@ -111,8 +114,9 @@ const defaultData = {
     {
       id: 'p1',
       title: 'Helpdesk Ticketing System',
+      subtitle: 'Full-Stack Security Developer',
       description: 'Enterprise helpdesk with SLA tracking, automated escalation rules, role-based analytics, and performance dashboards. Capstone project featuring full authorization controls and audit logging.',
-      github: 'https://github.com/srikanthn16',
+      github: 'https://github.com/Shreekanth162006/helpdesk-application',
       tags: ['React', 'Node.js', 'Express.js', 'MySQL', 'Tailwind CSS', 'Auth'],
       highlights: ['SLA & Escalation tracking', 'Role-based analytics', 'Audit Logging'],
       color: '#00ff41',
@@ -120,6 +124,7 @@ const defaultData = {
     {
       id: 'p2',
       title: 'Fund Trail Analysis Tool',
+      subtitle: 'Tool development using Full stack',
       description: 'Co-developed for Cyber Crime Wing Headquarters. Converts bulk Excel transaction data into an interactive fraud-detection visualization tree, integrating ATM/Cheque/Hold indicators and state-wise summaries.',
       github: 'https://github.com/srikanthn16',
       tags: ['Python', 'Django', 'JavaScript', 'Data Visualization', 'Security'],
@@ -129,6 +134,7 @@ const defaultData = {
     {
       id: 'p3',
       title: 'Smart Home Security System',
+      subtitle: 'Automatic Simulation',
       description: 'Simulated full smart-home network with mobile access management and real-time alert monitoring, mimicking IoT device controls and intrusion detection scenarios.',
       github: 'https://github.com/srikanthn16',
       tags: ['Cisco Packet Tracer', 'IoT', 'Mobile Interface', 'Network Security'],
@@ -262,8 +268,8 @@ const defaultData = {
     }
   ],
   bootcamps: [
-    { id: 'bc1', title: 'Cybersecurity Bootcamp', organizer: 'Google / Coursera', year: '2025', desc: 'Intensive hands-on training covering network security, threat detection, and incident response operations.', color: '#00ff41', icon: '💻', certUrl: '' },
-    { id: 'bc2', title: 'Ethical Hacking Workshop', organizer: 'DSCET Cyber Club', year: '2024', desc: 'Participated in a practical seminar on vulnerability scanning, threat modeling, and OWASP top 10 exploitation techniques.', color: '#00e5ff', icon: '🛡️', certUrl: '' }
+    { id: 'bc1', title: 'Cybersecurity Bootcamp', organizer: 'Google / Coursera', year: '2025', desc: 'Intensive hands-on training covering network security, threat detection, and incident response operations.', color: '#00ff41', icon: '💻', certUrl: '/secure_docs/google coursera.pdf' },
+    { id: 'bc2', title: 'Ethical Hacking Workshop', organizer: 'DSCET Cyber Club', year: '2024', desc: 'Participated in a practical seminar on vulnerability scanning, threat modeling, and OWASP top 10 exploitation techniques.', color: '#00e5ff', icon: '🛡️', certUrl: '/secure_docs/iot bootcamp.pdf' }
   ],
   gallery: [
     {
