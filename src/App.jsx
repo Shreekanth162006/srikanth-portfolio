@@ -43,7 +43,7 @@ function App() {
 
   return (
     <PortfolioProvider>
-      <div className="relative min-h-screen bg-cyber-darker">
+      <div className="relative min-h-screen bg-cyber-darker overflow-x-hidden w-full max-w-full">
         {loading && <LoadingScreen />}
         <MatrixRain />
         <CustomCursor />

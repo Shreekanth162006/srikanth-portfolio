@@ -69,7 +69,7 @@ export default function Hero() {
   }, [text, isDeleting, roleIndex, roles]);
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20 pb-32 md:pb-40 lg:pb-28">
+    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-32 sm:pt-20 pb-32 md:pb-40 lg:pb-28">
       <div className="absolute inset-0 cyber-grid-bg" />
       <div className="absolute inset-0 hex-pattern" />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-cyber-green/5 rounded-full blur-[150px]" />
